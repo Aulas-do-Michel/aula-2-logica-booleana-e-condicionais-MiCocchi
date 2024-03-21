@@ -58,12 +58,12 @@ Não
 
 
 
-cromossomo = str(input("Digite o cromossomo: "))
+cromossomo = (input("Digite o cromossomo: "))
 intervalo = int(input("Digite a posição: "))
 genoma = input("Digite o genoma de referência: ")
-if cromossomo == str("chr17") and intervalo >= 41196312 and intervalo <= 41277500 and genoma == ("hg19"):
+if cromossomo == ("chr17") and intervalo >= 41196312 and intervalo <= 41277500 and genoma == ("hg19"):
     print("sim")
-elif cromossomo == str("chr17") and intervalo >= 43044295 and intervalo <= 43125483 and genoma == ("hg38"):
+elif cromossomo == ("chr17") and intervalo >= 43044295 and intervalo <= 43125483 and genoma == ("hg38"):
     print("sim")
 else:
     print("não")
