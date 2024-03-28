@@ -88,7 +88,7 @@ Resposta: Não é relevante.
 
 frequência = float(input("Digite a frequência populacional (em porcentagem): "))
 gene = input("Digite o gene: ")
-impacto = input("Digite o impacto (alto ou baixo): ")
+impacto = input("Digite o impacto (ALTO ou BAIXO): ")
 reads = int(input("Digite os reads:"))
 vaf = float(input("Digite a frequência alélica (em porcentagem): "))
 
