@@ -58,14 +58,18 @@ Não
 
 
 
-cromossomo = (input("Digite o cromossomo: "))
-intervalo = int(input("Digite a posição: "))
+cromossomo = input("Digite o cromossomo: ")
+posição = int(input("Digite a posição: "))
 genoma = input("Digite o genoma de referência: ")
-if cromossomo == ("chr17") and intervalo >= 41196312 and intervalo <= 41277500 and genoma == ("hg19"):
-    print("sim")
-elif cromossomo == ("chr17") and intervalo >= 43044295 and intervalo <= 43125483 and genoma == ("hg38"):
+BRCA17 = cromossomo == "chr17"
+hg19 = (posição >= 41196312) and (posição <= 41277500)
+hg38 = (posição >= 43044295) and (posição <= 43125483)
+if BRCA17 and hg19 and genoma == "hg19":
     print("Resposta:")
-    print("sim")
+    print("Sim")
+elif BRCA17 and hg38 and genoma == "hg38":
+    print("Resposta:")
+    print("Sim")
 else:
-    print("Resposta: ")
-    print("não")
+    print("Resposta:")
+    print("Não")
