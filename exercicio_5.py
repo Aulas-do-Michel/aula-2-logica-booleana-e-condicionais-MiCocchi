@@ -85,15 +85,14 @@ Resposta: Não é relevante.
 
 
 
-
 frequência = float(input("Digite a frequência populacional (em porcentagem): "))
 gene = input("Digite o gene: ")
-impacto = input("Digite o impacto (ALTO ou BAIXO): ")
-reads = int(input("Digite os reads:"))
+impacto = input("Digite o impacto (alto ou baixo): ")
+reads = float(input("Digite os reads:"))
 vaf = float(input("Digite a frequência alélica (em porcentagem): "))
 
-artefato = (reads <10) or (vaf <20)
-relevante = (impacto == "alto")
+artefato = (reads <= 10) or (vaf < 20)
+relevante = (impacto == "ALTO")
 não_relevante = (frequência > 5)
 genes_exceção = (gene == "HFE") or (gene == "MEFV") or (gene == "GJB2")
 
